@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home • FinEdge Blog</title>
+  <meta name="description" content="A clean, responsive banking blog with guides, tips, and explanations." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container inner">
+      <a class="brand" href="index.html">
+        <span class="logo">₿</span>
+        <span>FinEdge</span>
+      </a>
+      <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+      <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a class="" href="blog.html">Blog</a>
+        <a class="" href="about.html">About</a>
+        <a class="" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+
+     
+      <h1>Understand Banking with Clear, Practical Guides</h1>
+      <p>From savings accounts to transfers and mobile security, we break down banking concepts so you can make smarter decisions.</p>
+      <div class="cta">
+        <a class="btn primary" href="blog.html">Read the Blog</a>
+        <a class="btn" href="about.html">About Us</a>
+      </div>
+
+      
+
+    </div>
+  </header>
+
+  
+
+  <main class="container section">
+     <div class="hero-image">
+         <img src="./unnamed.jpg" class="responsive " alt="pic">
+      </div>
+    <section class="section">
+      <h2>Latest Articles</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="eyebrow">Basics</div>
+          <h3>What is a Savings Account?</h3>
+          <p>A savings account helps you store money securely and earn interest while keeping funds accessible.</p>
+          <div class="meta">August 24, 2025 • 4 min read</div>
+          <a class="read-more" href="blog.html#" onclick="openArticle('savings-account'); return false;">Read more →</a>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Basics</div>
+          <h3>Current Accounts Explained</h3>
+          <p>Designed for frequent transactions—ideal for businesses and freelancers.</p>
+          <div class="meta">August 24, 2025 • 3 min read</div>
+          <a class="read-more" href="blog.html#" onclick="openArticle('current-account'); return false;">Read more →</a>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Savings</div>
+          <h3>Fixed Deposits vs. Term Deposits</h3>
+          <p>Lock your funds for a set term to earn higher interest than standard savings accounts.</p>
+          <div class="meta">August 24, 2025 • 5 min read</div>
+          <a class="read-more" href="blog.html#" onclick="openArticle('fixed-deposits'); return false;">Read more →</a>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Islamic</div>
+          <h3>Islamic Banking: The Basics</h3>
+          <p>Shariah-compliant banking avoids interest (riba) and emphasizes asset-backed financing.</p>
+          <div class="meta">August 24, 2025 • 6 min read</div>
+          <a class="read-more" href="blog.html#" onclick="openArticle('islamic-banking'); return false;">Read more →</a>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Credit</div>
+          <h3>Credit Scores & Why They Matter</h3>
+          <p>Your credit history affects loan approvals, limits, and pricing.</p>
+          <div class="meta">August 24, 2025 • 4 min read</div>
+          <a class="read-more" href="blog.html#" onclick="openArticle('credit-score'); return false;">Read more →</a>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Security</div>
+          <h3>Mobile Banking Safety Tips</h3>
+          <p>Secure your accounts with strong passwords, biometrics, and alerts.</p>
+          <div class="meta">August 24, 2025 • 3 min read</div>
+          <a class="read-more" href="blog.html#" onclick="openArticle('mobile-safety'); return false;">Read more →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why FinEdge?</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>Simple</h3><p>No jargon. Just clear explanations.</p></div>
+        <div class="card"><h3>Actionable</h3><p>Checklists, tips, and examples you can use today.</p></div>
+        <div class="card"><h3>Local Context</h3><p>Includes Pakistan-specific payments (IBFT/RTGS) and practices.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for reading articles -->
+  <div class="modal-backdrop" id="article-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="article-title">
+      <header style="display:flex;align-items:center;justify-content:space-between">
+        <strong>Article</strong>
+        <button class="close" onclick="closeArticle()">Close ✕</button>
+      </header>
+      <div id="article-container" class="content"></div>
+      <footer><button class="btn" onclick="closeArticle()">Close</button></footer>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container cols">
+      <div>
+        <div class="brand"><span class="logo">₿</span><span>FinEdge</span></div>
+        <p style="margin-top:.5rem">Banking made simple—guides, definitions, and practical tips.</p>
+      </div>
+      <div>
+        <strong>Pages</strong>
+        <ul style="list-style:none; margin-top:.5rem; display:grid; gap:.3rem">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Legal</strong>
+        <p style="margin-top:.5rem; font-size:.9rem">Educational content only. Not financial advice.</p>
+      </div>
+    </div>
+    <div class="container" style="margin-top:1rem; font-size:.85rem">© 2025 FinEdge Blog</div>
+  </footer>
+  <script src="assets/articles.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
